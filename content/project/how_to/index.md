@@ -30,7 +30,7 @@ url_video: ''
 #   Simply enter your slide deck's filename without extension.
 #   E.g. `slides = "example-slides"` references `content/slides/example-slides.md`.
 #   Otherwise, set `slides = ""`.
-slides: example
+slides: ""
 ---
 
 A collection of tutorials dedicated to the world of data science, artificial intelligence or engineering published on various platforms.
