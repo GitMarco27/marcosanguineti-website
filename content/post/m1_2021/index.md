@@ -6,7 +6,8 @@ subtitle: Enhance your data science experience on M1 Apple Silicon
 summary: In this brief tutorial, I’ll show you how to set up your Macbook Air / Pro / Mini with Apple Silicon M1 architecture for Tensorflow and Datascience.
 
 # Link this post with a project
-projects: []
+projects:
+  - how_to
 
 # Date published
 date: '2022-06-24T00:00:00Z'
