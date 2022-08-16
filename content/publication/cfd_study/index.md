@@ -1,5 +1,5 @@
 ---
-title: 'Centrifugal Compressor Aero-Mechanical Design: A Machine Learning Approach'
+title: 'CFD Study of the Impact of Variable Cant Angle Winglets on Total Drag Reduction'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
