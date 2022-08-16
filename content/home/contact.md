@@ -31,7 +31,7 @@ content:
     # street: 450 Serra Mall
     city: Chiavari
     region: Liguria
-    postcode: '16040'
+    postcode: '16043'
     country: Italy
     country_code: ITA
   # coordinates:
