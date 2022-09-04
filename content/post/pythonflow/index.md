@@ -47,8 +47,4 @@ categories:
 
 ## Overview
 
-As reported by the developers in the official documentation, Pythonflow is a Python library of dataflow programming, with a syntax very similar to that of Tensorflow, in its graph type. This library, simple but extremely powerful in my opinion, is designed for pre-processing flow (pipelines) for artificial intelligence models. Among the original goals, emerge:
-
-But let’s take a step back and understand how and why I came across this tool.
-
-Find out the complete article on [Medium](https://towardsdatascience.com/pythonflow-from-eager-to-graph-python-programming-6ee51fb9779f).
+A
