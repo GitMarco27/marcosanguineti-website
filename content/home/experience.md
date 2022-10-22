@@ -36,9 +36,7 @@ experience:
         * Qt and PyQt framework
         * Implementation of artificial intelligence algorithms with Tensorflow, Pytorch and Sklearn
         * Development of new networks for processing data from numerical simulation
-        * Python Software development
         * Research and Development
-        * Content Creator (Photoshop, Adobe Premiere)
 
   - title: Content Creator
     company: YouTube
