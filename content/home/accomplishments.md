@@ -59,7 +59,7 @@ item:
     date_end: '2025-09-01'
     date_start: '2022-09-01'
     description: ''
-    organization: TensorFlow
+    organization: Tensorflow
     organization_url: https://www.tensorflow.org
     title: TensorFlow Developer Certificate
     url: https://www.tensorflow.org/certificate
