@@ -55,6 +55,14 @@ item:
     organization_url: https://www.coursera.org
     title: TensorFlow Advanced Techniques Specialization
     url: https://www.coursera.org/specializations/tensorflow-advanced-techniques
+  - certificate_url: https://www.credential.net/023dcb6b-b6b4-4afd-ba36-3863f6d6fab9#gs.cxt8zm
+    date_end: '2025-09-01'
+    date_start: '2022-09-01'
+    description: ''
+    organization: TensorFlow
+    organization_url: https://www.tensorflow.org
+    title: TensorFlow Developer Certificate
+    url: https://www.tensorflow.org/certificate
 
 design:
   columns: '2'
