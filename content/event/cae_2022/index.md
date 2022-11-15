@@ -52,7 +52,8 @@ slides: ""
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 
-projects = []
+projects: 
+  - how_to
 ---
 
 Three main topics will be addressed: Turbomachinery blade optimization with ML techniques (application to Rotor 37 and centrifugal compressor datasets):
