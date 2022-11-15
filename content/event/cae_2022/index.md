@@ -16,8 +16,8 @@ summary: The present symposium describes the advantages of using Machine Learnin
 abstract: The present symposium describes the advantages of using Machine Learning methods within the turbomachinery and CAE analysis, highlighting the benefits of such techniques in terms of both design time and expected performance. 
 # Talk start and end times.
 #   End time can optionally be hidden by prefixing the line with `#`.
-date: '2022-11-06T15:00:00Z'
-date_end: '2022-11-06T16:00:00Z'
+date: '2022-11-16T15:00:00Z'
+date_end: '2022-11-16T16:00:00Z'
 all_day: false
 
 # Schedule page publish date (NOT talk date).
