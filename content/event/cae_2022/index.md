@@ -55,6 +55,8 @@ slides: ""
 projects: ""
 ---
 
+[![IMAGE ALT TEXT HERE](https://i.ytimg.com/vi/TwjbqWkL54M/hqdefault.jpg)](https://www.youtube.com/watch?v=TwjbqWkL54M&t=131s)
+
 Three main topics will be addressed: Turbomachinery blade optimization with ML techniques (application to Rotor 37 and centrifugal compressor datasets):
   - Automatic parameterization of 3D geometries through variational autoencoders, performance prediction through neural networks and optimization with ML algorithms;
   - Airfoil self-noise forecasting: sound pressure level for different size NACA 0012 airfoils at various wind tunnel speeds and angles of attack. Testing of different ML models, description of accuracy achieved, highlighting of the design parameters with the greatest influence
