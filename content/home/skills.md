@@ -20,11 +20,11 @@ feature:
     icon: python
     icon_pack: fab
     name: Python
-  - description: Listening is everything
-    icon: spotify
-    icon_pack: fab
-    name: Music Addicted
-  - description: Chasing future
+  - description: Analysis and simulation
+    icon: plane
+    icon_pack: fas
+    name: Engineering background
+  - description: AI and Data Science
     icon: code
     icon_pack: fas
     name: Deep Learning
