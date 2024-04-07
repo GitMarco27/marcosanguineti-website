@@ -74,4 +74,4 @@ highlight_name: true
 Welcome! I am Marco and I am an engineer passionate about Technology, Video Games, Artificial Intelligence and Simulation. I work as a software and deep learning engineer in Chiavari (Italy), the best city in the world by far. 
 I am very introverted and my dream is to have a Golden retriever.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume_02_2023.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/sanguineti_,marco_cv_04_2024.pdf" "newtab" >}}resumé{{< /staticref >}}.
