@@ -12,21 +12,61 @@ input[type=message], input[type=email], input[type=text], textarea {
 
 /* Style the submit button with a specific background color etc */
 button[type=submit] {
-  background-color: #FF4B4B;
+  background-color: white;
   width: 100%;
-  color: white;
+  color: #31333F;
   padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
+  border: 1px solid #D6D6D8; /* Uniform border: width, style, and color */
+  border-radius: 10px;
   cursor: pointer;
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
 button[type=submit]:hover {
-  background-color: #b03333;
+  border-color: #ec5a53; /* Changes the border color on hover */
+  color: #ec5a53;
 }
 
+
 /* Hide Streamlit Branding */
-#MainMenu {visibility: hidden;}
+/*#MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 header {visibility: hidden;}
+
+/* Style the contact icons*/
+.contact-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* Centers the icons horizontally */
+}
+
+.contact-icons a {
+  color: #000;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-icons a:hover {
+  color: #0073b1; /* Default hover color, can be customized */
+}
+
+.contact-icons a.linkedin:hover {
+  color: #0077b5;
+}
+
+.contact-icons a.github:hover {
+  color: #333;
+}
+
+.contact-icons a.medium:hover {
+  color: #00ab6c;
+}
+
+.contact-icons a.youtube:hover {
+  color: #ff0000;
+}
+
+.contact-icons a.scholar:hover {
+  color: #4285f4;
+}

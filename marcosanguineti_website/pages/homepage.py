@@ -22,7 +22,8 @@ class HomePage(page.Page):
 
         col1, col2 = st.columns(2, gap="small", vertical_alignment="top")
         with col1:
-            st.image(profile_pic, width=256)
+            _, c2, _ = st.columns([1, 3, 1], gap="small")
+            c2.image(profile_pic, width=256)
 
         with col2:
             st.markdown(
@@ -30,9 +31,12 @@ class HomePage(page.Page):
                 unsafe_allow_html=True,
             )
             st.markdown(
-                f"<h3 style='text-align: center;'>{PersonalInfo.description}</h3>",
+                f"<h4 style='text-align: center;'>{PersonalInfo.description}</h4>",
                 unsafe_allow_html=True,
             )
+
+            load_html_component(PathSettings.SRC_DIR / "contacts.html")
+            st.markdown("#####")
             st.download_button(
                 label=" 📄 Download Resume",
                 data=pdf_byte,
@@ -40,7 +44,8 @@ class HomePage(page.Page):
                 mime="application/octet-stream",
                 use_container_width=True,
             )
-            load_html_component(PathSettings.SRC_DIR / "contacts.html")
+
+        st.divider()
 
         st.info(
             "This website is a work in progress. For any question, please refer to "
