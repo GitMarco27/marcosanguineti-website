@@ -15,7 +15,7 @@ class ContactsPage(page.Page):
 
     def render(self):
         st.title("Contacts")
-        st.header(":mailbox: Get In Touch With Me!")
+        st.header(":mailbox: Get In Touch")
 
         formsubmit_key = os.getenv("FORMSUBMIT_KEY")
 

@@ -1,6 +1,6 @@
 import streamlit as st
 
-from marcosanguineti_website import PathSettings
+from marcosanguineti_website.settings import PathSettings
 
 
 def load_css():
