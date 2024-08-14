@@ -3,6 +3,7 @@ from PIL import Image
 
 from marcosanguineti_website.pages import page
 from marcosanguineti_website.settings import PathSettings, PersonalInfo
+from marcosanguineti_website.utils import load_html_component
 
 
 class HomePage(page.Page):
@@ -24,8 +25,14 @@ class HomePage(page.Page):
             st.image(profile_pic, width=256)
 
         with col2:
-            st.title(PersonalInfo.name)
-            st.write(PersonalInfo.description)
+            st.markdown(
+                f"<h1 style='text-align: center;'>{PersonalInfo.name}</h1>",
+                unsafe_allow_html=True,
+            )
+            st.markdown(
+                f"<h3 style='text-align: center;'>{PersonalInfo.description}</h3>",
+                unsafe_allow_html=True,
+            )
             st.download_button(
                 label=" 📄 Download Resume",
                 data=pdf_byte,
@@ -33,11 +40,10 @@ class HomePage(page.Page):
                 mime="application/octet-stream",
                 use_container_width=True,
             )
-            st.write("📫", PersonalInfo.email)
+            load_html_component(PathSettings.SRC_DIR / "contacts.html")
 
         st.info(
             "This website is a work in progress. For any question, please refer to "
             "**marcosanguineti.com/contacts**",
             icon="⚠️",
         )
-        st.balloons()

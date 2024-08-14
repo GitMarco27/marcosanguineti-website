@@ -5,6 +5,7 @@ class PathSettings:
     BASE_DIR: Path = Path(__file__).parent.parent
 
     STATIC_DIR: Path = BASE_DIR / "static"
+    SRC_DIR: Path = BASE_DIR / "src"
 
     CSS_PATH: Path = STATIC_DIR / "styles.css"
     PIC_PATH: Path = STATIC_DIR / "ms.png"

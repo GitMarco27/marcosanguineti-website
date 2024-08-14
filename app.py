@@ -4,7 +4,7 @@ from loguru import logger
 
 from marcosanguineti_website import ContactsPage, HomePage
 from marcosanguineti_website.settings import PathSettings
-from marcosanguineti_website.utils import load_css
+from marcosanguineti_website.utils import load_css, load_html_component
 
 if __name__ == "__main__":
     st.set_page_config(
@@ -28,5 +28,8 @@ if __name__ == "__main__":
             contacts.get_page(),
         ]
     )
+
+    with st.sidebar:
+        load_html_component(PathSettings.SRC_DIR / "contacts.html")
 
     pg.run()
