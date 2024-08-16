@@ -2,11 +2,12 @@ import dotenv
 import streamlit as st
 from loguru import logger
 
-from marcosanguineti_website import ContactsPage, HomePage
+from marcosanguineti_website import ContactsPage, HomePage, PublicationsPage
 from marcosanguineti_website.settings import PathSettings
 from marcosanguineti_website.utils import load_css, load_html_component
 
 if __name__ == "__main__":
+
     st.set_page_config(
         page_title="Marco Sanguineti WebSite",
         layout="wide",
@@ -21,12 +22,10 @@ if __name__ == "__main__":
 
     homepage = HomePage()
     contacts = ContactsPage()
+    publications = PublicationsPage()
 
     pg = st.navigation(
-        pages=[
-            homepage.get_page(),
-            contacts.get_page(),
-        ]
+        pages=[homepage.get_page(), publications.get_page(), contacts.get_page()]
     )
 
     with st.sidebar:

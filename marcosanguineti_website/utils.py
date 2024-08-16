@@ -11,6 +11,9 @@ def load_css():
         st.markdown(css, unsafe_allow_html=True)
 
 
-def load_html_component(path: Path):
+def load_html_component(path: Path, use_markdown: bool = True):
     with open(path, "r", encoding="utf-8") as f:
-        st.markdown(f.read(), unsafe_allow_html=True)
+        if use_markdown:
+            st.markdown(f.read(), unsafe_allow_html=True)
+        else:
+            st.html(f.read())
