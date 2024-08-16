@@ -4,7 +4,10 @@
 
 # TODO
 
-- [x] Merge CSS
-- [ ] Conditional CSS based on selected theme
-- [ ] Set the theme from code
-- [ ] Verify HTML code and move contacts links and personal infos to config
+- [ ] Evaluate dark theme mode
+- [ ] Fill workexperience
+- [ ] Create Academic background page
+- [ ] Chatbot page
+- [ ] Landing page customization
+- [ ] Projects
+- [ ] Github public scrape

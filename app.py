@@ -2,7 +2,12 @@ import dotenv
 import streamlit as st
 from loguru import logger
 
-from marcosanguineti_website import ContactsPage, HomePage, PublicationsPage
+from marcosanguineti_website import (
+    ContactsPage,
+    HomePage,
+    PublicationsPage,
+    WorkExperiencePage,
+)
 from marcosanguineti_website.settings import PathSettings
 from marcosanguineti_website.utils import load_css, load_html_component
 
@@ -23,9 +28,15 @@ if __name__ == "__main__":
     homepage = HomePage()
     contacts = ContactsPage()
     publications = PublicationsPage()
+    work_experience = WorkExperiencePage()
 
     pg = st.navigation(
-        pages=[homepage.get_page(), publications.get_page(), contacts.get_page()]
+        pages=[
+            homepage.get_page(),
+            work_experience.get_page(),
+            publications.get_page(),
+            contacts.get_page(),
+        ]
     )
 
     with st.sidebar:
