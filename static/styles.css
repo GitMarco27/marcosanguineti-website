@@ -70,3 +70,7 @@ header {visibility: hidden;}
 .contact-icons a.scholar:hover {
   color: #4285f4;
 }
+
+.contact-icons a.source:hover {
+  color: #921888;
+}
