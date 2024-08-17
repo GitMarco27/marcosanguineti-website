@@ -11,7 +11,7 @@ interface State {
 }
 
 class PublicationsGallery extends StreamlitComponentBase<State> {
-  public state = {
+  public state: State = {
     searchQuery: ""
   };
 
@@ -45,6 +45,7 @@ class PublicationsGallery extends StreamlitComponentBase<State> {
               />
               <div className="gallery-content">
                 <h3 className="gallery-title">{item.title}</h3>
+                <hr></hr>
                 <p className="gallery-subtitle">{item.year}</p>
               </div>
             </a>
@@ -55,13 +56,7 @@ class PublicationsGallery extends StreamlitComponentBase<State> {
   };
 
   private handleSearchChange = (event: React.ChangeEvent<HTMLInputElement>): void => {
-    const searchQuery = event.target.value;
-    this.setState({ searchQuery });
-    this.sendSearchQueryToPython(searchQuery);
-  };
-
-  private sendSearchQueryToPython = (query: string) => {
-    Streamlit.setComponentValue(query);
+    this.setState({ searchQuery: event.target.value });
   };
 
   private getFilteredGalleryItems = () => {

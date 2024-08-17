@@ -12,6 +12,7 @@ class PublicationsPage(page.Page):
         default=False,
     )
 
+    @st.fragment
     def render(self):
         st.title("📚 Publications")
         publications_gallery_component()

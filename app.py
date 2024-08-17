@@ -6,6 +6,7 @@ from marcosanguineti_website import (
     ContactsPage,
     HomePage,
     PublicationsPage,
+    RepositoriesPage,
     WorkExperiencePage,
 )
 from marcosanguineti_website.settings import PathSettings
@@ -29,11 +30,13 @@ if __name__ == "__main__":
     contacts = ContactsPage()
     publications = PublicationsPage()
     work_experience = WorkExperiencePage()
+    repositories = RepositoriesPage()
 
     pg = st.navigation(
         pages=[
             homepage.get_page(),
             work_experience.get_page(),
+            repositories.get_page(),
             publications.get_page(),
             contacts.get_page(),
         ]
