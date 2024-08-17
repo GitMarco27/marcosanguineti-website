@@ -10,4 +10,5 @@
 - [ ] Chatbot page
 - [ ] Landing page customization
 - [ ] Projects
-- [ ] Github public scrape
+- [x] Github public scrape
+- [ ] Custom components does not inherit streamlit default css
