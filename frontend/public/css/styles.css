@@ -21,64 +21,105 @@
 
 /* Change icon color on hover */
 .contact-icons a:hover {
-    color: #0073b1;
+    color: #0073b1; /* Default hover color */
 }
 
-/* Specific hover color for LinkedIn */
+/* Specific hover colors for individual icons */
 .contact-icons a.linkedin:hover {
     color: #0077b5;
 }
 
-/* Specific hover color for GitHub */
 .contact-icons a.github:hover {
     color: #333;
 }
 
-/* Specific hover color for Medium */
 .contact-icons a.medium:hover {
     color: #00ab6c;
 }
 
-/* Specific hover color for YouTube */
 .contact-icons a.youtube:hover {
     color: #ff0000;
 }
 
-/* Specific hover color for Google Scholar */
 .contact-icons a.scholar:hover {
     color: #4285f4;
 }
 
-/* Specific hover color for Source */
 .contact-icons a.source:hover {
     color: #921888;
 }
+
+/* ============================= */
+/*         HOME CONTAINER         */
+/* ============================= */
 
 .home-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: auto; /* Change height from 100vh to auto */
+    width: 80%; /* Set the container width, adjust as necessary */
+    max-width: 400px; /* Set a maximum width to prevent it from growing too large */
     text-align: center;
-    position: relative; /* Ensure relative positioning if necessary for z-index stacking */
-    z-index: 1; /* Higher z-index to stay on top of lines */
+    position: relative; /* Keep relative positioning for z-index */
+    z-index: 1; /* Ensure lower z-index than contact-icons */
+    background-color: rgba(255, 255, 255, 0.044); /* Translucent background */
+    padding: 20px; /* Add padding inside the container */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* More prominent shadow effect */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for the hover effect */
 }
+
+/* Magnify hover effect */
+.home-container:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* Even more prominent shadow on hover */
+}
+
+
+
+/* ============================= */
+/*        CENTERED IMAGE          */
+/* ============================= */
 
 .centered-image {
     max-width: 100%;
     height: auto;
     margin: 1em 0;
     position: relative; /* Ensure relative positioning if necessary for z-index stacking */
-    z-index: 3; /* Higher z-index to stay on top of lines */
+    z-index: 3; /* Ensure highest z-index among other elements */
 }
+
+/* ============================= */
+/*        HEADING STYLES          */
+/* ============================= */
 
 h1, h2, h3 {
     margin: 0.5em 0;
     position: relative; /* Ensure relative positioning if necessary for z-index stacking */
-    z-index: 2; /* Higher z-index to stay on top of lines */
+    z-index: 2;
     color: white;
 }
+
+h2, h3 {
+    color: #B5B5B5;
+}
+
+h2 {
+    margin-bottom: 5px;
+}
+
+h2 + h2 {
+    margin-top: 0; /* Adjust as needed */
+}
+
+/* ============================= */
+/*        GLOBAL STYLES           */
+/* ============================= */
 
 * {
     margin: 0;
@@ -86,28 +127,26 @@ h1, h2, h3 {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
+
 
 body {
-    display: table;
     width: 100%;
-    height: 100%;
     background-color: #171717;
-    color: #000;
+    color: white;
     line-height: 1.6;
-    position: relative;
     font-family: sans-serif;
-    overflow: hidden;
 }
+
+/* ============================= */
+/*        BACKGROUND LINES        */
+/* ============================= */
 
 .lines {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    height: 100%;
+    height: 110%;
     margin: auto;
     width: 90vw;
     z-index: 0; /* Lower z-index to stay behind all other content */
@@ -116,7 +155,7 @@ body {
 .line {
     position: absolute;
     width: 1px;
-    height: 100%;
+    height: 110%;
     top: 0;
     left: 50%;
     background: rgba(255, 255, 255, 0.1);
@@ -129,13 +168,12 @@ body {
     display: block;
     position: absolute;
     height: 15vh;
-    width: 100%;
+    width: 110%;
     top: -50%;
     left: 0;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
-    animation: drop 7s 0s infinite;
+    animation: drop 7s infinite cubic-bezier(0.4, 0.26, 0, 0.97);
     animation-fill-mode: forwards;
-    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
 }
 
 .line:nth-child(1) {
@@ -161,4 +199,77 @@ body {
     100% {
         top: 110%;
     }
+}
+
+/* ============================= */
+/*        NAVBAR STYLES           */
+/* ============================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.636); /* Use rgba for background transparency */
+    color: #fff;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%; /* Ensure container takes full width */
+}
+
+.navbar-logo img {
+    height: 40px;
+    margin-right: 20px; /* Space between logo and menu */
+}
+
+.navbar-menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of menu items */
+    gap: 20px;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    flex: 1; /* Allow menu to take up available space */
+}
+
+.navbar-menu li {
+    display: inline;
+}
+
+.navbar-menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+}
+
+/* Ensure other content is not hidden behind the navbar */
+body {
+    padding-top: 60px; /* Adjust based on navbar height */
+}
+
+/* Ensure the contact-icons are positioned to the right */
+.navbar-contact-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar-container > .navbar-contact-icons {
+    margin-left: auto; /* Push to the right, but only if there's space */
 }

@@ -6,8 +6,9 @@ function Home() {
         <img src="/ms.png" alt="alt" className="centered-image" />
 
         <h1>Marco Sanguineti</h1>
-        <h2>AI Engineer | Python Developer</h2>
-        <h3>⚠️ This website is under construction ⚠️</h3>
+        <h2>AI Engineer</h2>
+        <h2>Senior Python Developer</h2>
+        <h3>&#128511; This website is under construction &#128511;</h3>
 
 
         <div className="contact-icons">
