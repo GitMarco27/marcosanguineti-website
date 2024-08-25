@@ -313,11 +313,11 @@ body {
     z-index: 1;
 }
 
-/* Magnify hover effect, no color change */
+/* Magnify hover effect, no color change
 .timeline-item:hover {
-    transform: scale(1.05); /* Slight zoom-in effect */
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* More prominent shadow on hover */
-}
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}*/
 
 /* Style the circular markers on the timeline */
 .timeline-item .circle {

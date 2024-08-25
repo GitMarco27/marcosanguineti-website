@@ -65,7 +65,7 @@ const Clokko = () => {
   const containerStyle = {
     position: 'relative',
     width: '100vw',
-    height: '90vh',
+    height: '100vh',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
@@ -85,7 +85,7 @@ const Clokko = () => {
     left: '49%',
     transform: 'translate(-50%, -50%)',
     fontFamily: 'Digital-7, sans-serif', // You might want to use a digital-style font
-    fontSize: `${Math.min(containerDimensions.width, containerDimensions.height) * 0.05}px`, // Adjust size based on container
+    fontSize: `${Math.min(containerDimensions.width, containerDimensions.height) * 0.06}px`, // Adjust size based on container
     color: 'gray' // Adjust color as needed
   };
 
