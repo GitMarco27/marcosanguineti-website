@@ -58,9 +58,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto; /* Change height from 100vh to auto */
+    height: auto;
     width: 80%; /* Set the container width, adjust as necessary */
-    max-width: 400px; /* Set a maximum width to prevent it from growing too large */
+    max-width: 600px; /* Set a maximum width to prevent it from growing too large */
     text-align: center;
     position: relative; /* Keep relative positioning for z-index */
     z-index: 1; /* Ensure lower z-index than contact-icons */
@@ -69,8 +69,8 @@
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* More prominent shadow effect */
     margin: 0 auto; /* Center the container horizontally */
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-bottom: 25px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for the hover effect */
 }
 
@@ -272,4 +272,121 @@ body {
 
 .navbar-container > .navbar-contact-icons {
     margin-left: auto; /* Push to the right, but only if there's space */
+}
+
+/* ============================= */
+/*       WORK EXPERIENCE          */
+/* ============================= */
+
+/* Style the container for the timeline */
+.timeline-container {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+
+/* Style the timeline */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin: 20px 0;
+    border-left: 3px solid #B5B5B5; /* Use grayscale for sidebar */
+    z-index: 1;
+}
+
+/* Style individual timeline items */
+.timeline-item {
+    position: relative;
+    padding: 20px 20px 20px 40px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.044); /* Match home-container background */
+    border-radius: 15px; /* Match home-container border radius */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Match home-container box shadow */
+    width: calc(100% - 40px); /* Take full width with some margin */
+    max-width: 1200px; /* Limit max width */
+    z-index: 1;
+}
+
+/* Magnify hover effect, no color change */
+.timeline-item:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* More prominent shadow on hover */
+}
+
+/* Style the circular markers on the timeline */
+.timeline-item .circle {
+    position: absolute;
+    top: 20px;
+    left: -13px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #333; /* Use grayscale for circle */
+    border: 3px solid #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Highlight the circle marker for the current employment */
+.timeline-item.current .circle {
+    background-color: #555; /* Use darker grayscale */
+}
+
+/* Style the content within timeline items */
+.timeline-item .content {
+    display: block;
+    text-decoration: none;
+    color: #b5b5b5; /* Use grayscale for text */
+    background-color: rgba(255, 255, 255, 0.044); /* Match home-container background */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: none; /* Keep consistent with the hover effects */
+    transition: none; /* Remove hover effect */
+}
+
+/* Style the icons within the content */
+.timeline-item .content .icons {
+    margin-top: 10px;
+}
+
+.timeline-item .content .icons i {
+    margin-right: 10px;
+    color: #b5b5b5; /* Use grayscale for icons */
+    font-size: 18px;
+    transition: none; /* Remove hover effect */
+}
+
+/* Style the headings within the content */
+.timeline-item .content h3 {
+    margin: 0 0 5px 0;
+    color: #b5b5b5; /* Use grayscale for headings */
+    transition: none; /* Remove hover effect */
+}
+
+/* Style the date text within the content */
+.timeline-item .content span {
+    font-size: 14px;
+    color: #888; /* Use grayscale for date text */
+    transition: none; /* Remove hover effect */
+}
+
+/* Style the list items within the content */
+.timeline-item .content li {
+    margin: 10px 0px 10px 10px;
+    color: #B5B5B5; /* Use grayscale for list items */
+    line-height: 1.6;
+    transition: none; /* Remove hover effect */
+}
+
+/* Style for company logos */
+.company-logo {
+    max-width: 100px; /* Adjust the size as needed */
+    margin-bottom: 10px; /* Space between the logo and the heading */
+    display: block;
+    border-radius: 10px;
 }
