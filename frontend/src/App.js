@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import LinkedinRedirect from './pages/ExternalRedirect';
 import Career from './pages/Career'
+import Clokko from './pages/Clokko';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/career" element={<Career />} />
         <Route path="/about" element={<About />} />
+        <Route path="/clokko" element={<Clokko />} />
         <Route path="/linkedin" element={<LinkedinRedirect />} />
       </Routes>
     </Router>
