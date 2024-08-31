@@ -87,9 +87,8 @@
 /* ============================= */
 
 .centered-image {
-    width: auto;
+    max-width: 100%;
     height: auto;
-    max-width: 400px;
     margin: 1em 0;
     position: relative; /* Ensure relative positioning if necessary for z-index stacking */
     z-index: 3; /* Ensure highest z-index among other elements */
