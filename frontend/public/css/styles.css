@@ -87,8 +87,9 @@
 /* ============================= */
 
 .centered-image {
-    max-width: 100%;
+    width: auto;
     height: auto;
+    max-width: 400px;
     margin: 1em 0;
     position: relative; /* Ensure relative positioning if necessary for z-index stacking */
     z-index: 3; /* Ensure highest z-index among other elements */
@@ -129,12 +130,17 @@ h2 + h2 {
 
 
 
-body {
+html, body {
     width: 100%;
     background-color: #171717;
     color: white;
     line-height: 1.6;
     font-family: sans-serif;
+    padding-top: 60px;
+}
+
+html {
+    padding: 0px;
 }
 
 /* ============================= */
@@ -142,24 +148,23 @@ body {
 /* ============================= */
 
 .lines {
-    position: absolute;
+    position: fixed; /* Fixed position so that lines stay in place during scroll */
     top: 0;
     left: 0;
     right: 0;
-    height: 100%;
-    margin: auto;
-    width: 90vw;
+    height: 100%; /* Full height of the viewport */
+    width: 100%;
+    pointer-events: none; /* Allow interactions with content beneath the lines */
     z-index: 0; /* Lower z-index to stay behind all other content */
 }
 
 .line {
     position: absolute;
     width: 1px;
-    height: 100%;
+    height: 100%; /* Full height of the viewport */
     top: 0;
     left: 50%;
     background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
     z-index: 0; /* Lower z-index to stay behind all other content */
 }
 
@@ -168,7 +173,7 @@ body {
     display: block;
     position: absolute;
     height: 15vh;
-    width: 110%;
+    width: 100%;
     top: -50%;
     left: 0;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%);
@@ -197,7 +202,7 @@ body {
         top: -50%;
     }
     100% {
-        top: 110%;
+        top: 100%;
     }
 }
 
@@ -259,10 +264,6 @@ body {
     border-radius: 4px;
 }
 
-/* Ensure other content is not hidden behind the navbar */
-body {
-    padding-top: 60px; /* Adjust based on navbar height */
-}
 
 /* Ensure the contact-icons are positioned to the right */
 .navbar-contact-icons {

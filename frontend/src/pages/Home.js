@@ -3,7 +3,7 @@ import React from 'react';
 function Home() {
   return (
     <div className="home-container">
-        <img src="/ms.png" alt="alt" className="centered-image" />
+        <img src="/ms.png" alt="alt" className="centered-image"/>
 
         <h1>Marco Sanguineti</h1>
         <h2>AI Engineer</h2>

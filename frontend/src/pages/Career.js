@@ -43,6 +43,27 @@ function Career() {
                     </div>
                 </a>
             </div>
+
+            <div class="timeline-item">
+                <div class="circle"></div>
+                <a href="https://www.example.com" class="content">
+
+                    <img src="https://logos-world.net/wp-content/uploads/2021/08/Amazon-Web-Services-AWS-Logo.png" alt="Example Company Logo" class="company-logo"/>
+                    <h3>Placeholder</h3>
+                    <span>May 2118 - May 2220</span>
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ul>
+                    <div class="icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-bootstrap"></i>
+                    </div>
+                </a>
+            </div>
+
         </div>
     </div>
   );
