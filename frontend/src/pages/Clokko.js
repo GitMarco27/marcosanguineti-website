@@ -82,7 +82,7 @@ const Clokko = () => {
   const clockStyle = {
     position: 'absolute',
     top: '48%',
-    left: '49%',
+    left: '49.5%',
     transform: 'translate(-50%, -50%)',
     fontFamily: 'Digital-7, sans-serif', // You might want to use a digital-style font
     fontSize: `${Math.min(containerDimensions.width, containerDimensions.height) * 0.06}px`, // Adjust size based on container

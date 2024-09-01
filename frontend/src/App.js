@@ -5,6 +5,7 @@ import About from './pages/About';
 import LinkedinRedirect from './pages/ExternalRedirect';
 import Career from './pages/Career'
 import Clokko from './pages/Clokko';
+import Chatbot from './pages/Chatbot';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/chatbot" element={<Chatbot />} />
         <Route path="/about" element={<About />} />
         <Route path="/clokko" element={<Clokko />} />
         <Route path="/linkedin" element={<LinkedinRedirect />} />
